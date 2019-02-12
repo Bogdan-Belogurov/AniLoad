@@ -12,6 +12,12 @@
 		B39854F522133DB1009A6711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39854F322133DB1009A6711 /* Main.storyboard */; };
 		B39854F722133DB2009A6711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39854F622133DB2009A6711 /* Assets.xcassets */; };
 		B39854FA22133DB2009A6711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39854F822133DB2009A6711 /* LaunchScreen.storyboard */; };
+		B398550222133DF6009A6711 /* ALAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398550122133DF6009A6711 /* ALAnimationProtocol.swift */; };
+		B398550422133E41009A6711 /* ALShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398550322133E41009A6711 /* ALShape.swift */; };
+		B398550622133F37009A6711 /* ALView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398550522133F37009A6711 /* ALView.swift */; };
+		B398550A221343A3009A6711 /* ALAnimationGradiCircleRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3985509221343A3009A6711 /* ALAnimationGradiCircleRotate.swift */; };
+		B398550D221348A2009A6711 /* ALPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398550C221348A2009A6711 /* ALPresenter.swift */; };
+		B398550F22134BD5009A6711 /* ALViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398550E22134BD5009A6711 /* ALViewable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B39854F622133DB2009A6711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B39854F922133DB2009A6711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39854FB22133DB2009A6711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B398550122133DF6009A6711 /* ALAnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAnimationProtocol.swift; sourceTree = "<group>"; };
+		B398550322133E41009A6711 /* ALShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALShape.swift; sourceTree = "<group>"; };
+		B398550522133F37009A6711 /* ALView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALView.swift; sourceTree = "<group>"; };
+		B3985509221343A3009A6711 /* ALAnimationGradiCircleRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAnimationGradiCircleRotate.swift; sourceTree = "<group>"; };
+		B398550C221348A2009A6711 /* ALPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALPresenter.swift; sourceTree = "<group>"; };
+		B398550E22134BD5009A6711 /* ALViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALViewable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +71,40 @@
 				B39854F322133DB1009A6711 /* Main.storyboard */,
 				B39854F622133DB2009A6711 /* Assets.xcassets */,
 				B39854F822133DB2009A6711 /* LaunchScreen.storyboard */,
+				B398550722133FE4009A6711 /* Core */,
+				B398550822134382009A6711 /* Animations */,
+				B398550B22134885009A6711 /* Presenter */,
 				B39854FB22133DB2009A6711 /* Info.plist */,
 			);
 			path = AniLoad;
+			sourceTree = "<group>";
+		};
+		B398550722133FE4009A6711 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B398550122133DF6009A6711 /* ALAnimationProtocol.swift */,
+				B398550322133E41009A6711 /* ALShape.swift */,
+				B398550522133F37009A6711 /* ALView.swift */,
+			);
+			name = Core;
+			path = Preseter;
+			sourceTree = "<group>";
+		};
+		B398550822134382009A6711 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B3985509221343A3009A6711 /* ALAnimationGradiCircleRotate.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		B398550B22134885009A6711 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B398550C221348A2009A6711 /* ALPresenter.swift */,
+				B398550E22134BD5009A6711 /* ALViewable.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B398550222133DF6009A6711 /* ALAnimationProtocol.swift in Sources */,
 				B39854F222133DB1009A6711 /* ViewController.swift in Sources */,
+				B398550D221348A2009A6711 /* ALPresenter.swift in Sources */,
+				B398550622133F37009A6711 /* ALView.swift in Sources */,
+				B398550A221343A3009A6711 /* ALAnimationGradiCircleRotate.swift in Sources */,
+				B398550F22134BD5009A6711 /* ALViewable.swift in Sources */,
+				B398550422133E41009A6711 /* ALShape.swift in Sources */,
 				B39854F022133DB1009A6711 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
