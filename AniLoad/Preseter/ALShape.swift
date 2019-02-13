@@ -25,14 +25,15 @@ enum ALShape {
             gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
             gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
             gradientLayer.type = .conic
-            gradientLayer.colors = [#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0).cgColor, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2452910959).cgColor, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5).cgColor, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7514715325).cgColor, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor]
+
+            gradientLayer.colors = [color.withAlphaComponent(0).cgColor, color.withAlphaComponent(0.25).cgColor, color.withAlphaComponent(0.5).cgColor, color.withAlphaComponent(0.75).cgColor, color.withAlphaComponent(1).cgColor]
             gradientLayer.locations = [NSNumber(value: 0.0), NSNumber(value: 0.25), NSNumber(value: 0.5), NSNumber(value: 0.75), NSNumber(value: 1)]
             gradientLayer.frame = layer.frame
             gradientLayer.cornerRadius = size.width/2
             layer.addSublayer(gradientLayer)
         }
         
-        layer.masksToBounds = true
+        
         return layer
     }
 }

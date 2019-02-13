@@ -17,10 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: CGFloat(237 / 255.0), green: CGFloat(85 / 255.0), blue: CGFloat(101 / 255.0), alpha: 1)
-        let frame = CGRect(x: 50, y: 50, width: 100, height: 100)
-        let activityIndicatorView = ALView(frame: frame, type: presentingIndicatorType)
-        activityIndicatorView.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
-        activityIndicatorView.padding = 20
+        let frame = CGRect(x:self.view.frame.width/2 - 50, y: self.view.frame.height/2 - 50, width: 100, height: 100)
+        let activityIndicatorView = ALView(frame: frame, type: presentingIndicatorType, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), padding: 20)
         self.view.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
 

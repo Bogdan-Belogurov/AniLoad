@@ -14,15 +14,15 @@ class ALAnimationGradiCircleRotate: ALAnimationDelegate {
         let duration: CFTimeInterval = 0.9
         // Animation
         let animation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
-        animation.keyTimes = [0, 1]
-        animation.values = [0, 2 * Double.pi]
+        animation.keyTimes = [0, 0.2, 1]
+        animation.values = [0, 0, 2 * Double.pi]
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false
         // Draw circles
         
-        let circle = ALShape.gradiCircle.layerWith(size: size, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        let circle = ALShape.gradiCircle.layerWith(size: size, color: color)
         let frame = CGRect(
             x: (layer.bounds.width - size.width) / 2,
             y: (layer.bounds.height - size.height) / 2,
